@@ -126,7 +126,7 @@ nav.navbar {
 }
 /* Wedding Banner Styles */
 .wedding-banner {
-    background-image: url('wedding.png'); /* Add your image URL here */
+   background-image: url("wedding.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
