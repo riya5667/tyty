@@ -12,8 +12,8 @@
             <a href="#">Athenix</a>
         </div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li class="services-dropdown">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li class="services-dropdown" style="z-index: 2;">
                 <a href="#services">Services</a>
                 <ul class="dropdown">
                     <li><a href="#birthday">Birthday</a></li>
@@ -22,17 +22,16 @@
                     <li><a href="#formal">Formal Event</a></li>
                     <li><a href="#others">Others</a></li>
                 </ul>
-            </li>
+            </li> -->
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <!-- <li><a href="#contact">Contact Us</a></li> -->
         </ul>
    </nav>    
    <!-- Wedding Banner Section -->
    <section class="wedding-banner">
     <div class="banner-content">
         <h1>Your Dream Wedding Awaits</h1>
-        <p>Let us turn your special day into an unforgettable celebration of love and happiness.</p>
-        <a href="#contact" class="banner-button">Contact Us</a>
+       
     </div>
 </section>
   
@@ -68,6 +67,22 @@
             <label for="guests">Number of Guests:</label>
             <input type="number" id="guests" name="guest_count" placeholder="Enter number of guests" required>
         </div>
+
+        <div class="form-group">
+            <label for="budget">Budget (in INR):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget" required>
+        </div>
+        
+        <div class="form-group"></div>
+            <label for="event-type">Food Preference:</label>
+            <select id="event-type" name="event_type" required>
+                <option value="">Select Food Type</option>
+                <option value="haldi">Veg.</option>
+                <option value="mehandi">Non. Veg</option>
+
+            </select>
+        </div>
+        
 
         <!-- Emails of Responsible Members
         <div class="form-group">
