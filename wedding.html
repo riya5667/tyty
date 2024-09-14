@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Management</title>
+    <link rel="stylesheet" href="wedding.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Athenix</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="services-dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#birthday">Birthday</a></li>
+                    <li><a href="#wedding">Wedding</a></li>
+                    <li><a href="#funeral">Funeral</a></li>
+                    <li><a href="#formal">Formal Event</a></li>
+                    <li><a href="#others">Others</a></li>
+                </ul>
+            </li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+   </nav>    
+   <!-- Wedding Banner Section -->
+   <section class="wedding-banner">
+    <div class="banner-content">
+        <h1>Your Dream Wedding Awaits</h1>
+        <p>Let us turn your special day into an unforgettable celebration of love and happiness.</p>
+        <a href="#contact" class="banner-button">Contact Us</a>
+    </div>
+</section>
+  
+<div class="form-container">
+    <h2>Wedding Event Booking Form</h2>
+    <form action="submit_booking.php" method="POST">
+        <!-- Event Type -->
+        <div class="form-group">
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event_type" required>
+                <option value="">Select Event Type</option>
+                <option value="haldi">Haldi</option>
+                <option value="mehandi">Mehndi</option>
+                <option value="sangeet">Sangeet</option>
+                <option value="full_wedding">Full Wedding</option>
+            </select>
+        </div>
+
+        <!-- Groom's Name -->
+        <div class="form-group">
+            <label for="groom-name">Groom's Name:</label>
+            <input type="text" id="groom-name" name="groom_name" placeholder="Enter groom's name" required>
+        </div>
+
+        <!-- Bride's Name -->
+        <div class="form-group">
+            <label for="bride-name">Bride's Name:</label>
+            <input type="text" id="bride-name" name="bride_name" placeholder="Enter bride's name" required>
+        </div>
+
+        <!-- Number of Guests -->
+        <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guest_count" placeholder="Enter number of guests" required>
+        </div>
+
+        <!-- Emails of Responsible Members
+        <div class="form-group">
+            <label for="responsible-emails">Emails of Responsible Members (Separate emails with commas):</label>
+            <textarea id="responsible-emails" name="responsible_emails" rows="4" placeholder="Enter emails, separated by commas" required></textarea>
+        </div> -->
+
+        <!-- Contact Number of the Member Booking the Event
+        <div class="form-group">
+            <label for="contact-number">Contact Number of the Member Booking:</label>
+            <input type="tel" id="contact-number" name="contact_number" placeholder="Enter contact number" pattern="[0-9]{10}" required>
+        </div> -->
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <input type="submit" value="Book Event">
+        </div>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
